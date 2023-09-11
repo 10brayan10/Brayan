@@ -1,0 +1,20 @@
+create registro;
+
+create table usuarios(id int(3) pimary key auto_increment, 
+		nombre varchar	(50), 
+		apaterno varchar(50), 
+		amaterno varchar(50), 
+		nick varchar    (50), 
+		password varchar(32));
+
+create table asistencia(id int(3), 
+		 entrada datetime, 
+		 salida datetime,
+		 horas datetime);
+
+
+
+insert into usuarios values(1, "Batman", "ap_Batman", "am_Batman", "nick1", md5("pwd1"));
+insert into usuarios values(2, "Superman", "ap_Superman", "am_Superman", "nick2", md5("pwd2"));
+insert into usuarios values(3, "robin", "ap_robin", "am_robin", "nick3", md5("pwd3"));
+insert into usuarios values(4, "thor", "ap_thor", "am_thor", "nick4", md5("pwd4"));
